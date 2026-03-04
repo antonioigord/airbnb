@@ -8,3 +8,9 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FF5A5F;
+  --color-primary-dark: #FF385C;
+}

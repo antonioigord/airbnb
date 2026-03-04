@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
-
 module.exports = {
+  safelist: [
+  'bg-primary',
+  'text-primary',
+  'bg-primary-dark',
+],
   content: [
     './public/*.html',
     './app/helpers/**/*.rb',
@@ -11,14 +14,13 @@ module.exports = {
     './app/views/**/*.{erb,haml,html,slim}'
   ],
   theme: {
-    colors: {
-      ...colors,
-      primary: {
-        DEFAULT: '#FF5A5F',
-        dark: '#FF385C',
-      }
-    },
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#FF5A5F',
+          dark: '#FF385C',
+        }
+      },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
