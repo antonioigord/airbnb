@@ -16,7 +16,7 @@ Property.create!([
   address_2: "test",
   city: "test",
   state: "test",
-  country: "test",
+  country: "test"
 ])
 
 
@@ -28,5 +28,5 @@ Property.create!([
   address_2: "test2",
   city: "test2",
   state: "test2",
-  country: "test2",
+  country: "test2"
 ])
