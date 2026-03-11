@@ -20,4 +20,3 @@
     country: Faker::Address.country
   })
 end
-
