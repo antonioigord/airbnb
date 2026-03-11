@@ -9,7 +9,7 @@
 #   end
 
 Property.create!([
-  name: "Sample Property", 
+  name: "Sample Property",
   description: "test",
   headline: "test",
   address_1: "test",
@@ -19,9 +19,8 @@ Property.create!([
   country: "test"
 ])
 
-
 Property.create!([
-  name: "Sample Property2", 
+  name: "Sample Property2",
   description: "test2",
   headline: "test2",
   address_1: "test2",
