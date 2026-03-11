@@ -1,0 +1,4 @@
+class Property < ApplicationRecord
+  #obritatórios name, headline, description, address_1, city, state, country
+  validates :name, :headline, :description, :address_1, :city, :state, :country, presence: true
+end
