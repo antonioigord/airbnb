@@ -9,7 +9,7 @@
 #   end
 
 20.times do
-  Property.create!({
+  Property.create!(
     name: Faker::Lorem.unique.sentence(word_count: 3),
     description: Faker::Lorem.paragraph(sentence_count: 10),
     headline: Faker::Lorem.unique.sentence(word_count: 6),
@@ -18,6 +18,6 @@
     city: Faker::Address.city,
     state: Faker::Address.state,
     country: Faker::Address.country,
-    price: Money.from_amount((50..100).to_a.sample, "USD"),
-  })
+    price: Money.from_amount((50..100).to_a.sample, "USD")
+  )
 end
