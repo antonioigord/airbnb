@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2026_03_11_171906) do
+ActiveRecord::Schema[8.0].define(version: 2026_03_12_172734) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -25,6 +25,10 @@ ActiveRecord::Schema[8.0].define(version: 2026_03_11_171906) do
     t.string "country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "optional_price_cents"
+    t.string "optional_price_currency"
+    t.integer "price_cents"
+    t.string "price_currency"
   end
 
   create_table "users", force: :cascade do |t|
