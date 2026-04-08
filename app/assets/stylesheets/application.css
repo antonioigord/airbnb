@@ -36,11 +36,7 @@
   width: 28px !important;
   height: 28px !important;
   background-color: white;
-  background-image: url('next.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: 16px 16px !important;
-  color: black !important;
+  background-image: url('assets/next.svg') !important;
   border-radius: 50%;
   border-width: 4px;
   border-color: white;
@@ -50,8 +46,6 @@
 }
 
 .swiper-button-next::after {
-  display: none !important;
-  background: none !important;
   content: '' !important;
 }
 
@@ -60,11 +54,7 @@
   width: 28px !important;
   height: 28px !important;
   background-color: white;
-  background-image: url('prev.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: 16px 16px !important;
-  color: black !important;
+  background-image: url('assets/prev.svg') !important;
   border-radius: 50%;
   border-width:4px;
   border-color: white;
@@ -74,7 +64,5 @@
 }
 
 .swiper-button-prev::after {
-  display: none !important;
-  background: none !important;
   content: '' !important;
 }
